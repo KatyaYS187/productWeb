@@ -1,0 +1,27 @@
+﻿@model web_product.Entities.Products
+
+
+<h2>Управление продуктами</h2>
+
+<form asp-action="create" asp-controller="admin">
+     <p>
+        <label asp-for="Id">Id</label><br />
+        <input type="text" asp-for="Id" />
+    </p>
+    <p>
+        <label asp-for="Name">Имя</label><br />
+        <input type="text" asp-for="Name" placeholder="Введите название" />
+    </p>
+    <p>
+        <label asp-for="Description">Описание</label><br />
+        <input type="text" asp-for="Description" placeholder="Введите описание" />
+    </p>
+     <p>
+        <label asp-for="Price">Цена</label><br />
+        <input type="text" asp-for="Price" name="Price" placeholder="Введите цену" />
+    </p>
+    <p>
+        <input class="mybtn" type="submit" value="Отправить" />
+    </p>
+</form>
+
